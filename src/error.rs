@@ -1,4 +1,4 @@
-use std::fmt::{Display};
+use std::{fmt::{Display}, error::Error};
 
 #[derive(Debug)]
 pub struct ShellError {
