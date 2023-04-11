@@ -1,15 +1,15 @@
-use std::{fmt::{Display}, error::Error};
+use std::fmt::Display;
 
 #[derive(Debug)]
 pub struct ShellError {
-    // kind: 
+    // kind:
     message: String,
 }
 
 impl ShellError {
     pub fn new(message: &str) -> Self {
         ShellError {
-            message: String::from(message)
+            message: String::from(message),
         }
     }
 }

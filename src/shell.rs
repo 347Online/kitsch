@@ -1,10 +1,13 @@
 use std::{
-    io::Write,
     process::{exit, Child, Command, Stdio},
     str::SplitWhitespace,
 };
 
-use crate::{builtin::{self, prompt}, error::ShellError, ShellResult};
+use crate::{
+    builtin::{self, prompt},
+    error::ShellError,
+    ShellResult,
+};
 
 pub struct Shell {
     previous_command: Option<Child>,
